@@ -1,0 +1,6 @@
+html[ytd_browse="true"] ytd-browse[page-subtype="home"]{
+  display: none !important;
+}
+html[ytm-browse] ytm-browse{
+  display: none !important;
+}
