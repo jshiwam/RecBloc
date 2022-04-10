@@ -1,6 +1,6 @@
 {
     "manifest_version" : 3,
-    "name" : "Filter-Youtube",
+    "name" : "RecBloc",
     "version" : "0.0.1",
     "description" : "Filter the distraction from Youtube",
     "content_scripts": [
@@ -13,16 +13,17 @@
         }
     ],
     "action":{
-        "default_title":"Filter Youtube - Filter the distractions",
+        "default_title":"RecBloc - Filter the distractions",
         "default_popup":"popup.html"
     },
     "background": {
         "service_worker": "background.js"
     },
     "permissions":[
-        "activeTab",
-        "tabs",
-        "webNavigation",
         "storage"
-    ]
+    ],
+    "icons": { "16": "./assets/RecBloc16.png",
+        "48": "./assets/RecBloc48.png",
+       "128": "./assets/RecBloc128.png" 
+    }
 }
